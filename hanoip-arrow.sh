@@ -6,9 +6,7 @@ repo init --depth=1 --no-repo-verify -u https://github.com/ArrowOS/android_manif
 rm -rf .repo/local_manifests
 
 # Clone the manifest repository
-git clone https://github.com/anoosragh69/local_manifests-moto -b 13 --depth 1 .repo/local_manifests
-cd .repo/loca* && rm aosp.mk lineage.mk bliss.mk
-
+git clone https://github.com/anoosragh69/local_manifests-moto -b 13-arrow --depth 1 .repo/local_manifests
 # Force sync the repository
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 
