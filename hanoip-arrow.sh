@@ -12,6 +12,8 @@ repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 
+sudo apt install ccache -y
+
 # Set up the build environment
 source build/envsetup.sh
 
