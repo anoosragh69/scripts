@@ -10,6 +10,8 @@ git clone https://github.com/anoosragh69/local_manifests-moto -b 13-arrow --dept
 # Force sync the repository
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 
+repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+
 # Set up the build environment
 source build/envsetup.sh
 
