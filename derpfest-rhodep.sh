@@ -9,6 +9,10 @@ git clone https://github.com/anoosragh69/local_manifests-moto -b 13-rhodep-derpf
 # Force sync the repository
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 
+# Install ccache
+sudo apt update
+sudo apt install ccache -y
+
 # Set up the build environment
 source build/envsetup.sh
 
