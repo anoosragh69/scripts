@@ -16,6 +16,8 @@ sudo apt install ccache -y
 # Set up the build environment
 source build/envsetup.sh
 
+export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
+
 # Lunch for CPH1859 device
 lunch derp_rhodep-userdebug
 
