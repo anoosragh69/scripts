@@ -1,5 +1,8 @@
 # Build Script for hanoip
 
+rm -rf .repo
+rm -rf *
+
 repo init --depth=1 --no-repo-verify -u https://github.com/ArrowOS/android_manifest.git -b arrow-13.1 --git-lfs -g default,-mips,-darwin,-notdefault
 
 # Remove local_manifests directory
