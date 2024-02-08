@@ -1,7 +1,5 @@
 # Build Script for hanoip
 
-rm -rf .repo
-rm -rf *
 repo init --depth=1 --no-repo-verify -u https://github.com/PixelOS-AOSP/manifest.git -b fourteen --git-lfs -g default,-mips,-darwin,-notdefault
 
 # Remove local_manifests directory
