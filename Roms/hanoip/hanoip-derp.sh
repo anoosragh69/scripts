@@ -4,6 +4,8 @@
 rm -rf .repo/local_manifests
 
 ## Clone the manifest repository
+repo init --depth=1 -u https://github.com/DerpFest-AOSP/manifest.git -b 14
+
 git clone https://github.com/anoosragh69/local_manifests-moto -b 14-hanoip-derp --depth 1 .repo/local_manifests
 
 ## Force sync the repository
