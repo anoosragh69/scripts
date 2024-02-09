@@ -21,6 +21,8 @@ sudo apt install ccache -y
 ## Set up the build environment
 source build/envsetup.sh
 
+git clone -b android-14.0.0_r26 https://android.googlesource.com/platform/hardware/google/pixel hardware/google/pixel
+
 ## Apply sepolicy patch
 sudo ./device/motorola/targets/scripts/replace_camera_sepolicy.sh
 
