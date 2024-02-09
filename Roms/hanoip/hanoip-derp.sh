@@ -14,14 +14,16 @@ git clone https://github.com/anoosragh69/local_manifests-moto -b 14-hanoip-derp 
 ## Force sync the repository
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 
+rm -rf hardware/google/pixel
+git clone https://github.com/anoosragh69/hardware_google_pixel -b 14 hardware/google/pixel
+git clone https://github.com/moto-common/android_device_motorola_targets_include_headers device/motorola/targets/include/headers
+
 ## Install ccache
 sudo apt update
 sudo apt install ccache -y
 
 ## Set up the build environment
 source build/envsetup.sh
-
-git clone -b android-14.0.0_r26 https://android.googlesource.com/platform/hardware/google/pixel hardware/google/pixel
 
 ## Apply sepolicy patch
 sudo ./device/motorola/targets/scripts/replace_camera_sepolicy.sh
