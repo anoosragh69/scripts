@@ -1,10 +1,14 @@
 # Build Script for hanoip
 
+## Temp
+rm -rf .repo
+rm -rf *
+
 ## Remove local_manifests directory
-rm -rf .repo/local_manifests
+# rm -rf .repo/local_manifests
 
 ## Remove unstaged repos
-rm -rf prebuilts/clang/host/linux-x86/ prebuilts/rust/ 
+# rm -rf prebuilts/clang/host/linux-x86/ prebuilts/rust/ 
 
 ## Clone the manifest repository
 repo init --depth=1 -u https://github.com/DerpFest-AOSP/manifest.git -b 14
