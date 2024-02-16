@@ -1,7 +1,7 @@
 # Build Script for hanoip
 
 ## Remove old repos
-rm -rf prebuilts/clang/host/linux-x86/ prebuilts/rust/ .repo/local_manifests
+rm -rf prebuilts/clang/host/linux-x86/ prebuilts/rust/ .repo/local_manifests hardware/qcom-caf/sm*
 
 ## Clone the manifest repository
 repo init --depth=1 -u https://github.com/DerpFest-AOSP/manifest.git -b 14
