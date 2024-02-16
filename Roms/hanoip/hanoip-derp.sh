@@ -1,7 +1,7 @@
 # Build Script for hanoip
 
 ## Remove old repos
-rm -rf prebuilts/clang/host/linux-x86/ prebuilts/rust/ .repo/local_manifests hardware/qcom-caf/sm*
+rm -rf prebuilts/clang/host/linux-x86/ prebuilts/rust/ .repo/local_manifests
 
 ## Clone the manifest repository
 repo init --depth=1 -u https://github.com/DerpFest-AOSP/manifest.git -b 14
@@ -11,7 +11,7 @@ git clone https://github.com/anoosragh69/local_manifests-moto -b 14-hanoip-derp 
 ## Force sync the repository
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 
-rm -rf hardware/google/pixel
+rm -rf hardware/google/pixel hardware/qcom-caf/sm*
 git clone https://github.com/anoosragh69/hardware_google_pixel -b 14 hardware/google/pixel
 git clone https://github.com/moto-common/android_device_motorola_targets_include_headers device/motorola/targets/include/headers
 
