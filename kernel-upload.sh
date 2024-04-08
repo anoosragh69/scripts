@@ -20,7 +20,7 @@ zip -r9 shinzui-hanoip.zip * -x .git README.md .github
 
 # Sign zip file
 curl -sLo zipsigner-3.0.jar https://github.com/Magisk-Modules-Repo/zipsigner/raw/master/bin/zipsigner-3.0-dexed.jar
-java -jar zipsigner-3.0.jar shinzui-hanoip.zip "shinzui-$version-$date.zip"
+java -jar zipsigner-3.0.jar shinzui-hanoip.zip "shinzui-$ver-$date.zip"
 
 # Upload kernel
 ksau upload shinzui-v* Public
