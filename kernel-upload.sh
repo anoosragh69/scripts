@@ -16,7 +16,7 @@ cp -f out/target/product/hanoip/dtbo.img AnyKernel3/dtbo.img
 
 # Zip kernel
 cd AnyKernel3
-zip -r9 shinzui-hanoip.zip * -x .git README.md .github
+zip -r9 shinzui-hanoip.zip * -x .git README.md .github LICENSE
 
 # Sign zip file
 curl -sLo zipsigner-3.0.jar https://github.com/Magisk-Modules-Repo/zipsigner/raw/master/bin/zipsigner-3.0-dexed.jar
