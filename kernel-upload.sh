@@ -15,7 +15,7 @@ cp -f out/target/product/hanoip/obj/KERNEL_OBJ/arch/arm64/boot/dts/qcom/sdmmagpi
 cp -f out/target/product/hanoip/dtbo.img AnyKernel3/dtbo.img
 
 # Zip kernel
-cd Anykernel3
+cd AnyKernel3
 zip -r9 shinzui-hanoip.zip * -x .git README.md .github
 
 # Sign zip file
