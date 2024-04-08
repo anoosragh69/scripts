@@ -6,6 +6,9 @@
 date=$(date +"%Y%m%d-%H%M")
 ver=v1.0
 
+# Clone Anykernel
+git clone https://github.com/anoosragh69/AnyKernel3
+
 # Zip Image
 gzip out/target/product/hanoip/obj/KERNEL_OBJ/arch/arm64/boot/Image
 
