@@ -22,7 +22,7 @@ export BUILD_HOSTNAME=mtrixfuker
 export BUILD_USERNAME=anoosragh69
 
 ## Lunch for hanoip device
-lunch yaap_hanoip-userdebug
+lunch yaap_hanoip-ap1a-userdebug
 
 ## Build for hanoip device
 m yaap
