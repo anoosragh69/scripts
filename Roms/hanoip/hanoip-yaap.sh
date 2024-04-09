@@ -1,7 +1,7 @@
 # Build Script for hanoip
 
 ## Remove old repos
-rm -rf prebuilts/clang/ prebuilts/rust/ .repo/local_manifests
+rm -rf prebuilts/clang/ prebuilts/rust/ .repo
 
 ## Clone the manifest repository
 repo init --depth=1 -u https://github.com/yaap/manifest.git -b fourteen --git-lfs
