@@ -1,15 +1,15 @@
 # Build Script for hanoip
 
 ## Remove old repos
-rm -rf prebuilts/clang/ prebuilts/rust/ .repo
+rm -rf .repo/local_manifests
 
 ## Clone the manifest repository
-repo init --depth=1 -u https://github.com/yaap/manifest.git -b fourteen --git-lfs
+repo init --depth=1 --no-repo-verify -u https://github.com/yaap/manifest.git -b fourteen --git-lfs -g default,-mips,-darwin,-notdefault
 
 git clone https://gitlab.com/anoosragh69/local_manifests.git -b yaap-hanoip --depth 1 .repo/local_manifests
 
 ## Force sync the repository
-repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+/opt/crave/resync.sh
 
 ## Install ccache
 sudo apt update
