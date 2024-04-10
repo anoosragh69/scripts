@@ -1,7 +1,7 @@
 # Build Script for hanoip
 
 ## Remove old repos
-rm -rf .repo/local_manifests packages hardware lineage-sdk external
+rm -rf .repo/local_manifests packages hardware lineage-sdk external frameworks
 
 ## Clone the manifest repository
 repo init --depth=1 --no-repo-verify -u https://github.com/yaap/manifest.git -b fourteen --git-lfs -g default,-mips,-darwin,-notdefault
