@@ -4,7 +4,7 @@
 rm -rf .repo/local_manifests packages hardware lineage-sdk external frameworks prebuilts/gcc
 
 ## Clone the manifest repository
-repo init --depth=1 --no-repo-verify -u https://git.libremobileos.com/LMODroid/manifest.git -b fourteen --git-lfs -g default,-mips,-darwin,-notdefault
+repo init --depth=1 --no-repo-verify -u https://github.com/anoosragh69/manifest.git -b fourteen --git-lfs -g default,-mips,-darwin,-notdefault
 
 git clone https://gitlab.com/anoosragh69/local_manifests.git -b lmo-hanoip --depth 1 .repo/local_manifests
 
