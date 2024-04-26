@@ -4,7 +4,7 @@
 # Copyright (C) 2018 Rama Bndan Prakoso (rama982)
 
 date=$(date +"%Y%m%d-%H%M")
-ver=v1.1
+ver=v1.2
 
 # Clone Anykernel
 git clone https://github.com/anoosragh69/AnyKernel3
