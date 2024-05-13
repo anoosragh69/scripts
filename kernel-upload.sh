@@ -4,7 +4,7 @@
 # Copyright (C) 2018 Rama Bndan Prakoso (rama982)
 
 date=$(date +"%Y%m%d-%H%M")
-ver=v1.2
+ver=v2.0
 
 # Clone Anykernel
 git clone https://github.com/anoosragh69/AnyKernel3
@@ -19,11 +19,11 @@ cp -f out/target/product/hanoip/dtbo.img AnyKernel3/dtbo.img
 
 # Zip kernel
 cd AnyKernel3
-zip -r9 shinzui-hanoip.zip * -x .git README.md .github LICENSE
+zip -r9 meteora-hanoip.zip * -x .git README.md .github LICENSE
 
 # Sign zip file
 curl -sLo zipsigner-3.0.jar https://github.com/Magisk-Modules-Repo/zipsigner/raw/master/bin/zipsigner-3.0-dexed.jar
-java -jar zipsigner-3.0.jar shinzui-hanoip.zip "shinzui-$ver-$date-signed.zip"
+java -jar zipsigner-3.0.jar meteora-hanoip.zip "meteora-$ver-$date-signed.zip"
 
 # Upload kernel
-ksau upload shinzui-v* Public
+ksau upload meteora-v* Public
